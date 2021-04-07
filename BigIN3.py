@@ -1,16 +1,15 @@
-#----Larger Number in 3 numbers---#
+#---created by Nagarjuna----#
 
 
-i=int(input("enter i val"))
-j=int(input("enter j val"))
-k=int(input("enter k val"))
-if(i>j):
-    if(i>k):
-        print("i is bigger num")
+def larger_3(i,j,k): #finding largest of 3 numbers
+    if(i>j):
+        if(i>k):
+            print(str(i)+" is bigger num")
+        else:
+            print(str(k)+" is bigger num")
     else:
-        print("k is bigger num")
-else:
-    if(j>k):
-        print("j is bigger num")
-    else:
-        print("k is bigger num")
+        if(j>k):
+            print(str(j)+" is bigger num")
+        else:
+            print(str(k)+"is bigger num")
+larger_3(1,2,3)
